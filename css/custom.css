@@ -1,0 +1,395 @@
+/* Small portfolio-specific additions; the original theme files stay unchanged. */
+:root  {
+    --portfolio-dark: #202c3b;
+    --portfolio-gold: #e8bc54;
+}
+
+body  {
+    color: var(--portfolio-dark);
+}
+
+.bg-light  {
+    background-color: #faf8f3 !important;
+}
+
+.btn-primary  {
+    background: var(--portfolio-gold);
+    border-color: var(--portfolio-gold);
+    color: #202c3b;
+}
+
+.btn-primary:hover, .btn-primary:focus  {
+    background: #f0ca73;
+    border-color: #f0ca73;
+    color: #202c3b;
+}
+
+a  {
+    color: #76570d;
+}
+
+a:focus-visible, button:focus-visible  {
+    outline: 3px solid #d39c19;
+    outline-offset: 4px;
+}
+
+#mainNav  {
+    background: rgba(20,30,43,.88);
+}
+
+#mainNav.navbar-shrink  {
+    background: #202c3b;
+}
+
+#mainNav .navbar-brand  {
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: .08em;
+}
+
+#mainNav .navbar-toggler  {
+    color: #202c3b;
+    background: var(--portfolio-gold);
+}
+
+.skip-link  {
+    position: fixed;
+    left: 12px;
+    top: -90px;
+    z-index: 2000;
+    padding: 12px;
+    background: white;
+}
+
+.skip-link:focus  {
+    top: 12px;
+}
+
+.photo-section  {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    background: #172331;
+}
+
+.photo-section > .container  {
+    position: relative;
+    z-index: 1;
+}
+
+.parallax-bg  {
+    position: absolute;
+    inset: -110px 0;
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+}
+
+.photo-section::after  {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(10,20,32,.73);
+    z-index: -1;
+}
+
+header.masthead  {
+    background-image: none;
+    text-align: left;
+    padding: 12rem 0 8rem;
+}
+
+header.masthead .parallax-bg  {
+    background-image: url('../assets/img/header-bg.jpg');
+}
+
+header.masthead::after  {
+    background: linear-gradient(90deg,rgba(10,20,32,.88),rgba(10,20,32,.32));
+}
+
+.eyebrow  {
+    font: 600 .75rem Montserrat, sans-serif;
+    letter-spacing: .18em;
+    color: #e8bc54;
+}
+
+.hero-title  {
+    font-family: "Space Grotesk", Montserrat, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.055em;
+    font-size: clamp(2.5rem,6vw,4.7rem);
+    line-height: 1.12;
+    margin: 1.5rem 0;
+}
+
+.hero-copy  {
+    color: #e0e5e9;
+    max-width: 560px;
+    font-size: 1.15rem;
+}
+
+.skill-card, .interest-card  {
+    border: 1px solid #e6e7e8;
+    border-radius: 12px;
+    padding: 28px;
+    height: 100%;
+}
+
+.skill-card  {
+    background: #faf8f3;
+}
+
+.skill-card h3, .interest-card h3  {
+    font-size: 1.2rem;
+}
+
+.number-tag  {
+    display: inline-block;
+    border-radius: 6px;
+    background: #faebc3;
+    padding: 4px 9px;
+    font: 700 .75rem Montserrat,sans-serif;
+    margin-bottom: 18px;
+}
+
+.stack  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 42px;
+}
+
+.stack img  {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+.stack figure  {
+    margin: 0;
+    text-align: center;
+}
+
+.stack figcaption  {
+    font: .65rem Montserrat,sans-serif;
+    margin-top: 6px;
+    color: #596574;
+}
+
+.project-card  {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    border: 1px solid #ecebea;
+    transition: transform .2s,box-shadow .2s;
+}
+
+.project-card:hover  {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(32,44,59,.1);
+}
+
+.project-card > img  {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.project-card .card-body  {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card h3  {
+    font-size: 1.2rem;
+}
+
+.project-links  {
+    margin-top: auto;
+    font: 600 .85rem Montserrat,sans-serif;
+}
+
+.project-links a  {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+#education .parallax-bg  {
+    background-image: url('../assets/img/library.jpg');
+}
+
+.photo-section .section-heading, .photo-section .section-subheading  {
+    color: white;
+}
+
+.photo-section .section-subheading  {
+    opacity: .85;
+}
+
+.timeline:before  {
+    background: rgba(255,255,255,.4);
+}
+
+#education .timeline > li  {
+    min-height: 150px;
+    margin-bottom: 45px;
+}
+
+#education .timeline > li:last-child  {
+    margin-bottom: 0;
+}
+
+#education .timeline > li .timeline-image  {
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    left: 50%;
+    background: var(--portfolio-gold);
+    border: 5px solid #fff;
+    top: 28px;
+}
+
+#education .timeline > li .timeline-panel  {
+    padding: 24px;
+    background: rgba(255,255,255,.96);
+    border-radius: 12px;
+    text-align: left;
+}
+
+.timeline h3  {
+    font-size: 1.2rem;
+}
+
+.timeline .date  {
+    font: 700 .75rem Montserrat,sans-serif;
+    color: #657080;
+}
+
+.interest-card  {
+    background: white;
+}
+
+.interest-card h3::after  {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: var(--portfolio-gold);
+    margin: 18px 0;
+}
+
+.interest-card ul  {
+    padding: 0;
+    list-style: none;
+    color: #657080;
+    line-height: 1.9;
+    margin-bottom: 0;
+}
+
+section#contact  {
+    background-image: none;
+}
+
+#contact .parallax-bg  {
+    background-image: url('../assets/img/contact-background.svg');
+}
+
+#contact::after  {
+    background: rgba(10,20,32,.2);
+}
+
+#contact a  {
+    color: #e8bc54;
+    overflow-wrap: anywhere;
+}
+
+#contact .form-control  {
+    background: rgba(255,255,255,.08);
+    color: white;
+    border-color: #788592;
+    min-height: 54px;
+}
+
+#contact .form-control::placeholder  {
+    color: #bdc7d1;
+}
+
+#contact .form-control:focus  {
+    border-color: var(--portfolio-gold);
+    box-shadow: 0 0 0 .2rem rgba(232,188,84,.2);
+}
+
+#contact textarea.form-control  {
+    min-height: 145px;
+}
+
+#contact label  {
+    color: white;
+    font: 600 .85rem Montserrat,sans-serif;
+}
+
+.form-note  {
+    color: #c9d0d7;
+    font-size: .8rem;
+}
+
+footer  {
+    background: #172331;
+    color: #c9d0d7;
+}
+
+footer a  {
+    color: #e8bc54;
+}
+
+footer summary  {
+    cursor: pointer;
+}
+
+.modal-content  {
+    border-radius: 12px;
+}
+
+@media(max-width:767.98px)  {
+    header.masthead  {
+        padding: 9rem 0 5rem;
+    }
+
+    .page-section  {
+        padding: 65px 0;
+    }
+
+    #education .timeline > li .timeline-image  {
+        left: 12px;
+        margin-left: 0;
+    }
+
+    #education .timeline::before  {
+        left: 24px;
+    }
+
+    #education .timeline > li .timeline-panel, #education .timeline > li.timeline-inverted .timeline-panel  {
+        float: right;
+        width: calc(100% - 58px);
+        padding: 20px;
+    }
+
+}
+
+@media(prefers-reduced-motion:reduce)  {
+    .parallax-bg  {
+        transform: none !important;
+    }
+
+    .project-card  {
+        transition: none;
+    }
+
+    .project-card:hover  {
+        transform: none;
+    }
+
+}
