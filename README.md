@@ -1,4 +1,4 @@
-# Daniil Istomin — Personal Portfolio
+# Personal Portfolio
 
 A responsive, single-page portfolio presenting my coding projects, education and personal interests. Built as part of the Lime Light internship by customizing a Start Bootstrap-based website template.
 
